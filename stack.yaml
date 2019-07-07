@@ -1,0 +1,10 @@
+flags: {}
+
+packages:
+- .
+
+extra-deps: 
+- ../vass
+- ../karp-miller
+
+resolver: lts-13.27 # GHC 8.6.5a
