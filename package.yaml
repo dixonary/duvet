@@ -27,6 +27,7 @@ default-extensions:
 - DuplicateRecordFields
 - RecordWildCards
 - LambdaCase
+- TupleSections
 
 dependencies:
 - base >= 4.7 && < 5
@@ -36,7 +37,12 @@ dependencies:
 - megaparsec
 - pretty-simple
 - vass
-- karp-miller
+- text
+- timeit
+- cassava
+- bytestring
+- filepath
+- silently
 
 library:
   source-dirs: src
