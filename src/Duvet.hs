@@ -1,3 +1,22 @@
+{-| Duvet is an application which allows you to test arbitrary Petri Net 
+    coverability checkers against each other.
+
+    The requirements for integrating a checker are simple. As the CovChecker 
+    type admits IO actions, you can also use this to interface directly with 
+    other tools such as MIST or BFC, by marshalling the internal data type into 
+    an accepted format. We do not expose the file format directly as not all
+    tools can take all formats (most take exactly one format).
+
+    1. Create an instance of the 'CheckerInfo' type. One example is the 
+    'Data.VASS.Coverability.Checker.hcover' implementation which implements
+    the hcover tool. 
+
+    2. In the main function of your code, call runDuvet with the set of checkers 
+    which you wish to compile against.
+
+    3. Run your compiled program and use the built-in command-line flags 
+    to control input and output files, output format, and so on.
+-}
 module Duvet where
 
 import Options.Applicative
