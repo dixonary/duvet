@@ -25,7 +25,6 @@ import Data.Char (toLower)
 import Checker.Hcover
 import Text.Pretty.Simple
 
--- | From vass
 import Data.VASS.Coverability
 import Data.VASS.Read (readAny)
 

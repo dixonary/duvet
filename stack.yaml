@@ -4,7 +4,7 @@ packages:
 - .
 
 extra-deps: 
-- ../vass
-- ../karp-miller
+- git: https://github.com/dixonary/vass
+  commit: 21020e8246353f14042c4e8070a6af093e2aebf2
 
 resolver: lts-13.27 # GHC 8.6.5a
